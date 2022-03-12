@@ -13,8 +13,6 @@ const Calculator = () => {
     } = useContext(Context);
 
     const setGetInputValue = () => {
-        console.log(giveValue);
-        console.log(rate);
         let value = giveValue * rate;
         setGetValue(value);
     }

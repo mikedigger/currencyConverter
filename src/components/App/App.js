@@ -7,6 +7,7 @@ import Context from '../Context';
 
 const exchangeAPI = new ExchangeService();
 
+
 const App = () => {
 
     const [rate, setRate] = useState(0);
@@ -17,18 +18,16 @@ const App = () => {
 
     const [giveValue, setGiveValue] = useState(0);
     const [getValue, setGetValue] = useState(0);
-
+    
     useEffect(() => {
-
-        // exchangeAPI.getActualRateDate(base, target)
-        //     .then(res => setDate(res));
+        
+        exchangeAPI.getActualRateDate(base, target)
+            .then(res => setDate(res));
 
         exchangeAPI.getExchangeRate(base, target)
             .then(res => setRate(res));
-
     })
 
-    // if (!date) return '...'
 
     return (
         <Context.Provider value={{

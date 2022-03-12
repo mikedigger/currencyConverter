@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import './CalculatorItem.css';
 import Context from '../Context';
 
 const currencyList = ['NOK', 'SEK', 'USD', 'DKK', 'EUR'];
 
 const humanDate = (time) => {
-    const date = new Date(time * 1000);
+    const date = new Date(time);
     return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`
 }
 
@@ -21,6 +21,7 @@ const CalculatorItem = ({ type }) => {
         giveValue, setGiveValue,
         getValue
     } = useContext(Context);
+
 
     let dateHuman = humanDate(date);
 
@@ -40,8 +41,6 @@ const CalculatorItem = ({ type }) => {
         }
     }
 
-
-    
     const setGiveInputValue = (e) => {
         setGiveValue(e.target.value)
     }
