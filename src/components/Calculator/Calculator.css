@@ -1,0 +1,23 @@
+.calculator {
+    width: 100%;
+    max-width: 75%;
+	padding: 35px 45px 45px;
+	background-color: #fff;
+	display: flex;
+	gap: 22px;
+	align-items: center;
+    justify-content: center;
+	position: relative;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(0, 130, 154, 1) 50%);
+}
+
+.button {
+	width: 60px;
+	height: 60px;
+	background-color: #01a8c6;
+	margin-top: -14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}

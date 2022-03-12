@@ -1,0 +1,17 @@
+
+.app-header {
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--accent-color)
+}
+
+.app-title {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.app-subtitle {
+    font-size: 20px;
+    color: var(--base-color);
+}
