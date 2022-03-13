@@ -1,5 +1,4 @@
 .calculator-item {
-    flex-grow: 1;
     flex-basis: calc(260 / 600 * 100%);
 }
 
@@ -56,6 +55,7 @@
 }
 
 .calculator-item-footer {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     gap: 10px;
 }

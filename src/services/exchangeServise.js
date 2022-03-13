@@ -7,7 +7,7 @@ export default class ExchangeService {
         const res = await fetch(url);
 
         if (!res.ok) {
-            throw new Error(`Could not fetch ${url}`)
+            throw new Error(`Could not fetch ${url}, got ${res.status}`)
         }
 
         return await res.json();

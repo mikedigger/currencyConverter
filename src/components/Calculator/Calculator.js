@@ -26,7 +26,7 @@ const Calculator = () => {
             <button
                 onClick={setGetInputValue}
                 className="button">
-                X
+                <i class="fa-solid fa-right-left"></i>
             </button>
             <CalculatorItem type={'get'} />
         </div>

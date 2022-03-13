@@ -6,7 +6,7 @@
 }
 
 .app-title {
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 700;
     margin-bottom: 15px;
 }
@@ -14,4 +14,11 @@
 .app-subtitle {
     font-size: 20px;
     color: var(--base-color);
+}
+
+@media screen and (min-width: 1199.98px) {
+    .app-title {
+        font-size: 60px;
+
+    }
 }

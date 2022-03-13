@@ -20,7 +20,6 @@ const App = () => {
     const [getValue, setGetValue] = useState(0);
     
     useEffect(() => {
-        
         exchangeAPI.getActualRateDate(base, target)
             .then(res => setDate(res));
 
