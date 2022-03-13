@@ -17,8 +17,81 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
+	/* color: #fff; */
 	align-self: center;
+	border: 1px solid transparent;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: #01a8c6;
+	border-color: #01a8c6;
+	transition: .3s;
+}
+
+.calculator-item {
+    flex-basis: calc(260 / 600 * 100%);
+}
+
+.calculator-item-get input::placeholder,
+.base-c-light {
+	color: #fff;
+}
+
+.opacity-low {
+	opacity: .7;
+}
+
+.border-c-light {
+	border-color: #fff;
+}
+
+.calculator-item-get .calculator-item-input{
+	opacity: 1 !important;
+}
+
+.calculator-item-get .calculator-item-currency-select {
+    background-color: rgb(0, 130, 154);
+}
+
+
+.calculator-item-title {
+    margin-bottom: 7px;
+}
+
+.calculator-item-body  {
+    font-size: 20px;
+    border: 2px solid var(--base-color);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.calculator-item-input,
+.calculator-item-currency-select {
+    padding: 13px;
+}
+
+.calculator-item-input {
+    padding-left: 30px;
+    width: 100%;
+}
+
+.calculator-item-input::placeholder,
+.calculator-item-input {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.calculator-item-currency-select {
+    border-left: 2px solid var(--base-color);
+}
+
+.calculator-item-footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 @media screen and (min-width: 1199.98px) {
